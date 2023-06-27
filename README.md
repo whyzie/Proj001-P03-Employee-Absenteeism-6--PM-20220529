@@ -207,6 +207,8 @@ control
   
  </table>
 
+ ## Figure 1.1 Normal vs Excessive Absenteeism
+
 ![image](https://github.com/whyzie/Proj001-P03-Employee-Absenteeism-6--PM-20220529/assets/97485455/d0feb1ab-db25-46be-8e02-dc00146c8236)
 
 
@@ -328,3 +330,61 @@ control
   </td>
   </tr>
   </table>
+
+  <hr>
+<table style="color:black;
+           display:fill;
+           border-colapse: colapse;
+           width: 100%;
+           border: 1px solid black;
+           border-collapse: collapse;
+           border-style: solid;
+           border-radius:5px;
+           background-color:#5642C5;
+           font-size:110%;
+           font-family:Verdana;
+           letter-spacing:0.5px">
+            
+  <h3 style = "text-align:center">Table 2. Machine Learning Model Feature Importance </h3>
+  <tr>
+    <th>XG Boost (1)</th>
+    <th>Decision Tree (1)</th>
+    <th>Random Forest (1)</th>    
+  </tr>
+  <tr style = "text-align:center">
+      <td><img style= "margin:auto" src="https://i.imgur.com/fRCagnV.png" width = "600"></td>
+      <td><img style= "margin:auto" src="https://i.imgur.com/r5NT76p.png" width = "600"></td>
+      <td><img style= "margin:auto" src="https://i.imgur.com/kBpwsEl.png" width = "600"></td>
+  </tr>
+  </table>
+  
+## Conclussion
+<hr>
+
+<div class="alert alert-block alert-success" style="font-family:verdana; font-size:14px">
+
+Logistic Regression
+<br><br>
+The logistic regression model achieved precision of 73%, recall of 73%, f1-score of 73% (all weighted averages), and accuracy of 72.86%, on the test set.
+<br><br>
+Tree-based Machine Learning
+<br><br>
+We only still in the level 01 (baseline) and has not done feature engineering, the xgboost model achieved AUC of 79.4%, precision of 75.4%, recall of 81.2%, f1-score of 78.2%, and accuracy of 19.3%, on the test set. The random forest and decision tree model slightly underperformed the decision tree model
+<br>    
+The models and the feature importances extracted from the models baseline shows that employees at the company are drive by the trasport expense. 
+<br><br>
+To preliminary reduce absenteeism, the following recommendations could be presented to the stakeholders:
+<br><br>
+<ol>
+<li> Transportation expense between ~190 to 300 USD have the most employee with excessive absenteeism. We have to look to this further whether they can work from home,  as the distance with this range account of ~10 to 40 distance to work but not included as feature importance.
+<li>  We can see that there are employees who are overworked increase in ~240-300 hours
+<li> We can see the increase of children also decrease employee with excessive absenteeism. There are employees without children who are disengaged employees. We can also elaborate by separating to two groups without children (0) and with children (1).
+<li>Ensure that employee has understood the overtime policy, check and if the employee has been given information accordingly.  Consider that employee can exchange their overtime with more paid leave of holiday or vacation.
+<li>Ensure that employee has understood the absenteeism policy, check and if the employee has been given information accordingly.    
+<li>Important to have team or department as well in company-wide discussion regarding the work culture.
+<li> Body mass index and month value, provide gym or healthy programs.
+<br><br>
+Next Steps
+<br>
+It may be justified to still have some concern about data leakage and we only have small data of 700. Feture engineering is required to confirm the results further.
+</div>
